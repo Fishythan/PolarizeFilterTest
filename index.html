@@ -4,7 +4,7 @@
             <canvas style="width: 100%; height: 100%;"></canvas>
         </div>
         <div>
-            <input type="range" min="0" max="360" oninput="SetLens(null, this.value)">
+            <input type="range" min="0" max="180" oninput="SetLens(null, this.value)">
             <input type="checkbox" onchange="SetLens(this.checked, null)">Enable Lens</input>
             <div id="imageUploader">
                 <input type=file id="fileInput" accept=".png, .jpg, .jpeg" onchange="addImageLayer(this.files[0])"/>
