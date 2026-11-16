@@ -1,0 +1,19 @@
+<body>
+    <div style="display: flex; justify-content:center; width: 100%; height: 100%;">
+        <div style="height:100%; aspect-ratio: 1/1; background-color: aliceblue;">
+            <canvas style="width: 100%; height: 100%;"></canvas>
+        </div>
+        <div>
+            <input type="range" min="0" max="360" oninput="SetLens(null, this.value)">
+            <input type="checkbox" onchange="SetLens(this.checked, null)">Enable Lens</input>
+            <div id="imageUploader">
+                <input type=file id="fileInput" accept=".png, .jpg, .jpeg" onchange="addImageLayer(this.files[0])"/>
+            </div>
+            <div>
+                Sorry it runs like shit, I am not about to learn webgpu for this. like, if <i>needed</i> i can rewrite it in unity with compute shaders i guess, but liek....
+            </div>
+        </div>
+        
+    </div>
+   <script src="Stuff.js"></script>
+</body>
